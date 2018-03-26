@@ -1,10 +1,10 @@
 require 'active_support/inflector'
 
-module Rurl
+module Rcurl
   class Curl
     class << self
       METHODS = {
-        GET: 'Rurl::Method::Get'
+        GET: 'Rcurl::Method::Get'
       }
 
       def execute(config)

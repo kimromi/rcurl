@@ -1,4 +1,4 @@
-module Rurl
+module Rcurl
   module Method
     class Base
       attr_reader :config

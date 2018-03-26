@@ -1,6 +1,6 @@
 require 'thor'
 
-module Rurl
+module Rcurl
   class CLI < Thor
     default_command :execute
 
@@ -16,7 +16,7 @@ module Rurl
 
       config = Configure.new(args: args, url: url, path: options[:path])
       Curl.execute(config)
-    rescue RurlError => e
+    rescue RcurlError => e
       $stderr.puts e.message
       exit 1
     end
@@ -24,7 +24,7 @@ module Rurl
     map %w(--version -v) => :version
     desc "--version, -v", "see version"
     def version
-      puts Rurl::VERSION
+      puts Rcurl::VERSION
     end
   end
 end

@@ -1,17 +1,17 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "rurl/version"
+require "rcurl/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "ruby-curl"
-  spec.version       = Rurl::VERSION
+  spec.name          = "rcurl"
+  spec.version       = Rcurl::VERSION
   spec.authors       = ["kimromi"]
   spec.email         = ["kimromi4@gmail.com"]
 
   spec.summary       = %q{curl tool by ruby}
   spec.description   = %q{curl tool by ruby}
-  spec.homepage      = "https://github.com/kimromi/rurl"
+  spec.homepage      = "https://github.com/kimromi/rcurl"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})

@@ -2,7 +2,7 @@ require 'yaml'
 require 'erb'
 require 'active_support/core_ext/hash/keys'
 
-module Rurl
+module Rcurl
   class Configure
     def initialize(args:, url:, path:)
       @args = args

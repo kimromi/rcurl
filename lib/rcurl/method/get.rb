@@ -1,7 +1,7 @@
 require 'uri'
 require 'active_support/core_ext/object/to_param'
 
-module Rurl
+module Rcurl
   module Method
     class Get < Base
       def method
