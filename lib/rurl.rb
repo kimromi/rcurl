@@ -1,5 +1,5 @@
 require "rurl/version"
+require "rurl/cli"
 
 module Rurl
-  # Your code goes here...
 end
