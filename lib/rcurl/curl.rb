@@ -4,7 +4,8 @@ module Rcurl
   class Curl
     class << self
       METHODS = {
-        GET: 'Rcurl::Method::Get'
+        GET: 'Rcurl::Method::Get',
+        POST: 'Rcurl::Method::Post'
       }
 
       def execute(config)
