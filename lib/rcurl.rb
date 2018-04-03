@@ -6,6 +6,7 @@ require "rcurl/error"
 
 require "rcurl/method/Base"
 require "rcurl/method/Get"
+require "rcurl/method/Post"
 
 module Rcurl
 end
