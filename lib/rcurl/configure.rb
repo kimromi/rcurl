@@ -38,7 +38,7 @@ module Rcurl
 
     def yaml
       raise ConfigFileNotFound, "Config not found. #{@file}" unless File.exist?(file)
-      @yaml = YAML.load(read).symbolize_keys
+      @yaml ||= YAML.load(read).symbolize_keys
     rescue Psych::SyntaxError
       raise InvalidConfig, 'invalid config file'
     end
